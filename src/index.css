@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-portfolio-beige: #f5f5f0;
+  --color-portfolio-ink: #1a1a1a;
+  --color-portfolio-accent: #2d6a4f;
+  --color-portfolio-muted: #6b7280;
+  --color-portfolio-border: rgba(26, 26, 26, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-portfolio-beige text-portfolio-ink font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .prof-card {
+    @apply bg-white border border-portfolio-border rounded-2xl shadow-sm transition-all duration-300;
+  }
+
+  .prof-button-primary {
+    @apply bg-portfolio-accent text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:opacity-90 active:scale-95;
+  }
+
+  .prof-button-outline {
+    @apply border border-portfolio-ink/20 text-portfolio-ink px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-portfolio-ink hover:text-white;
+  }
+
+  .prof-sidebar-item {
+    @apply flex items-center gap-3 px-6 py-4 transition-all duration-200 border-r-2 border-transparent hover:bg-portfolio-ink/5;
+  }
+
+  .prof-sidebar-item.active {
+    @apply bg-portfolio-ink/5 border-portfolio-accent text-portfolio-accent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d6a4f;
+  border-radius: 10px;
+}
