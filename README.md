@@ -1,12 +1,8 @@
 # Sai Vamsi | AI Engineer Portfolio
 
-<div align="center">
-  <img width="1200" height="475" alt="Sai Vamsi Portfolio Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 ## 🚀 About Me
 
-I am a Data Analytics Engineer dedicated to bridging technical precision with strategic innovation. My expertise lies in data analytics, Generative AI, and solving data problems in financial services, with a particular focus on creating ETL applications, LLMs, RAG architectures, and MLOps.
+I am a Data & AI Specialist dedicated to bridging technical precision with strategic innovation. My expertise lies in data analytics, Generative AI, and solving data problems in financial services, with a particular focus on creating ETL applications, LLMs, RAG architectures, and MLOps.
 
 - **Current Focus:** LLM Orchestration & Inference Optimization
 - **Core Stack:** Python, LangChain, SQL, GCP, React
